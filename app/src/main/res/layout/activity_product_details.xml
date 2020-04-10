@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ProductDetailsActivity">
+
+    <ImageView
+        android:id="@+id/single_product_image_details"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/single_product_name_details"
+        android:layout_below="@+id/single_product_image_details"
+        android:text="Product Name"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="10dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/single_product_name_details"
+        android:id="@+id/single_product_price_details"
+        android:text="Product Price"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+  <android.support.v4.widget.NestedScrollView
+      android:layout_width="wrap_content"
+      android:layout_below="@id/single_product_price_details"
+      android:layout_height="match_parent">
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:id="@+id/single_product_description_details"
+          android:text="Product Description"
+          android:gravity="center"
+          android:layout_margin="10dp"
+          android:textColor="@android:color/black"
+          android:textStyle="bold"
+          android:textSize="16dp"
+          android:layout_marginTop="10dp"
+          />
+
+  </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>
